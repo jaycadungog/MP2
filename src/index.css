@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root {
+    --primary: #D95830;
+    --secondary: #50723C;
+    --dark: #24272B;
+    --light: #F2F3AE;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+h1, h4, p, a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 1px solid var(--light);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-light {
+background: transparent;
+color: var(--light);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--light);
+    transition: 0.3s;
+}
